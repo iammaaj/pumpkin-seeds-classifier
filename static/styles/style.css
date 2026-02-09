@@ -1,0 +1,118 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #e6f2ec, #cfe5d8);
+  margin: 0;
+  padding: 20px;
+}
+
+/* Main container */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #f7fbf9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 25px rgba(0, 80, 40, 0.15);
+}
+
+/* Heading */
+h1 {
+  color: #1b4332;
+  text-align: center;
+}
+
+/* Subtitle text */
+p {
+  text-align: center;
+  color: #3a5a40;
+}
+
+/* Grid layout */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Input group */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  background: #e9f5ef;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+/* Labels */
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #1b4332;
+}
+
+/* Inputs */
+input[type="number"] {
+  padding: 10px;
+  border: 1px solid #a3c9b5;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #f6fff8;
+  transition:
+    border-color 0.3s,
+    box-shadow 0.3s;
+}
+
+input[type="number"]:focus {
+  border-color: #2d6a4f;
+  outline: none;
+  box-shadow: 0 0 5px rgba(45, 106, 79, 0.4);
+}
+
+/* Invalid input */
+input.invalid {
+  border-color: #d62828;
+}
+
+/* Error message */
+.error-message {
+  color: #d62828;
+  font-size: 12px;
+  min-height: 18px;
+}
+
+/* Button */
+button {
+  display: block;
+  width: 220px;
+  margin: 25px auto;
+  padding: 12px;
+  background: #2d6a4f;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition:
+    background 0.3s,
+    transform 0.2s;
+}
+
+button:hover {
+  background: #1b4332;
+  transform: translateY(-2px);
+}
+
+/* Form error */
+.form-error {
+  text-align: center;
+  color: #d62828;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}
